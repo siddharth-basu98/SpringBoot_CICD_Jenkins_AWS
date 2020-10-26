@@ -19,7 +19,7 @@ pipeline {
      steps {
        echo 'Deploying...'
        sh "mvn install"
-       sh "spring-boot:run"			
+       sh "java -jar /var/lib/jenkins/workspace/Sporty_Shoes_Pipeline/target/sporty_shoes-0.0.1-SNAPSHOT.jar"			
      }
    }
   }
